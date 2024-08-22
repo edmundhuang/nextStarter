@@ -1,4 +1,6 @@
-import bcrypt from 'bcrypt';
+// import bcrypt from 'bcrypt';
+var bcrypt= require('bcryptjs');
+
 import { db } from '@vercel/postgres';
 import { invoices, customers, revenue, users } from '../lib/placeholder-data';
 
