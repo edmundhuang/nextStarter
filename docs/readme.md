@@ -12,3 +12,28 @@ pnmp i bcryptjs
 var bcrypt= require('bcryptjs');
 ```
 
+### Partial Prerendering (PPR).
+1. next.config.mjs
+```
+/** @type {import('next').NextConfig} */
+ 
+const nextConfig = {
+  experimental: {
+    ppr: 'incremental',
+  },
+};
+ 
+export default nextConfig;
+```
+
+2.  layout.tsx
+```
+//...
+ 
+export const experimental_ppr = true;
+ 
+// ...
+```
+
+That is all.
+
